@@ -1,0 +1,51 @@
+I eat fish and vegetables.
+Fish are pets.
+My kitten eats fish.
+
+
+K=2 topic number
+V=voc number 无重复
+voc 编号 1-10 
+docs matrix (self.docs)
+
+doc 0 [0, 1, 2, 3, 4]
+doc 1 [2, 5, 6]
+doc 2 [7, 8, 9, 2]
+
+self.z_m_n #topics of words of documents
+doc 0 [0, 0, 0, 1, 1] 说明前三个来自topic 1 后两个来自topic 2; 
+doc 1 ... 
+doc 2 ...
+
+self.n_z #word count of each topic 两个topic下, 每个topic含有的word的数量(可重复,总数应该是N)
+
+self.n_m_z #统计 3*2的矩阵 3个docs ,2个topic   doc*K
+self.n_z_t #统计 2*10的矩阵 2个topic, 10个voc  K*V
+
+
+
+self.N #文档的总的词语数量 12
+
+函数def perplexity() 计算：
+
+
+
+
+
+Examples
+Throw a dice 20 times:
+>>>
+>>> np.random.multinomial(20, [1/6.]*6, size=1)
+array([[4, 1, 7, 5, 2, 1]])
+It landed 4 times on 1, once on 2, etc.
+Now, throw the dice 20 times, and 20 times again:
+>>>
+>>> np.random.multinomial(20, [1/6.]*6, size=2)
+array([[3, 4, 3, 3, 4, 3],
+       [2, 4, 3, 4, 0, 7]])
+For the first run, we threw 3 times 1, 4 times 2, etc. For the second, we threw 2 times 1, 4 times 2, etc.
+A loaded dice is more likely to land on number 6:
+>>>
+>>> np.random.multinomial(100, [1/7.]*5)
+array([13, 16, 13, 16, 42])
+

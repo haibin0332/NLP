@@ -1,0 +1,333 @@
+.wppa-container img {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none;
+}
+.prev {
+	
+}
+.next {
+	
+}
+.speed0 {
+	cursor: pointer;
+}
+.startstop {
+	cursor: pointer;
+}
+.speed1 {
+	cursor: pointer;
+}
+.prev-arrow {
+	cursor: pointer;
+}
+.next-arrow {
+	cursor: pointer;
+}
+.arrow {
+	cursor: pointer;
+}
+.wppa-nav {
+	
+}
+.wppa-box {
+	padding: 2px 6px;
+}
+.wppa-mini-box {
+	
+}
+.wppa-even {
+	
+}
+.wppa-alt {
+	
+}
+.wppa-img {
+	
+}
+.albumlist {
+	clear: both;
+}
+.thumblist {
+	clear: both;
+}
+.albumlist .album {
+	padding: 7px; float: left;
+}
+.thumblist .thumb {
+	padding: 7px; float: left;
+}
+.wppa-title {
+	margin: 0px; padding: 0px; clear: none;
+}
+.wppa-box-text {
+	
+}
+.wppa-nav-text {
+	
+}
+.wppa-title {
+	
+}
+.wppa-fulldesc {
+	
+}
+.wppa-fulltitle {
+	
+}
+.wppa-black {
+	color: black; font-weight: normal; text-decoration: none; cursor: default;
+}
+.wppa-black:hover {
+	color: black; font-weight: normal; text-decoration: none; cursor: default;
+}
+.coverphoto-frame {
+	
+}
+.thumbphoto-frame {
+	
+}
+.coverphoto-frame .image {
+	margin: 0px; padding: 4px; border-radius: 3px; border: currentColor; border-image: none; position: relative;
+}
+.thumbphoto-frame .image {
+	margin: 0px; padding: 4px; border-radius: 3px; border: currentColor; border-image: none; position: relative;
+}
+.covertext-frame {
+	
+}
+.thumbnail-area {
+	padding: 7px 0px 7px 7px; position: relative;
+}
+.thumbnail-frame {
+	text-align: center; overflow: hidden; float: left; display: inline; background-color: transparent;
+}
+.wppa-thumb-text {
+	text-align: center; font-size: 10px;
+}
+.wppa-popup-frame {
+	position: absolute; z-index: 1000;
+}
+.wppa-popup {
+	border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(136, 136, 136) rgb(136, 136, 136) rgb(204, 204, 204); padding: 5px; text-align: center; line-height: 12px; font-size: 10px; position: absolute; background-color: white;
+}
+.imagetitle {
+	text-align: center; cursor: default;
+}
+.imagedesc {
+	text-align: center; cursor: default;
+}
+.slide-frame {
+	padding: 0px !important; width: 100%; position: relative;
+}
+.wideentry .slide-frame {
+	padding: 0px;
+}
+.theslide {
+	padding: 0px !important; position: absolute; background-color: transparent;
+}
+.theimg {
+	display: block;
+}
+.spinner {
+	width: 32px; height: 32px; position: relative; background-color: transparent;
+}
+.no-shadow {
+	box-shadow: none !important;
+}
+.wppa-arrow {
+	
+}
+.bc-pname {
+	color: inherit; font-weight: normal; text-decoration: none;
+}
+.wppa-widget {
+	
+}
+.wppa-widget-text {
+	margin: 5px; text-align: center;
+}
+.big {
+	margin: 0px auto; display: block;
+}
+.clear {
+	clear: both;
+}
+#content .wppa-comment-form {
+	padding: 0px; border: 0px currentColor; border-image: none; width: 100%; text-align: left;
+}
+.wppa-comment-form {
+	padding: 0px; border: 0px currentColor; border-image: none; width: 100%; text-align: left;
+}
+#content .wppa-comment-form input {
+	margin: 0px; padding: 0px; line-height: 18px; font-size: 12px;
+}
+#content .wppa-comment-form textarea {
+	margin: 0px; padding: 0px; line-height: 18px; font-size: 12px;
+}
+.wppa-comment-form input {
+	margin: 0px; padding: 0px; line-height: 18px; font-size: 12px;
+}
+.wppa-comment-form textarea {
+	margin: 0px; padding: 0px; line-height: 18px; font-size: 12px;
+}
+#content .wppa-comment-form tr td {
+	padding: 0px 12px; border: 0px currentColor; border-image: none;
+}
+.wppa-comment-form tr td {
+	padding: 0px 12px; border: 0px currentColor; border-image: none;
+}
+#content .wppa-detail tr td {
+	padding: 0px 12px; border: 0px currentColor; border-image: none;
+}
+.wppa-detail tr td {
+	padding: 0px 12px; border: 0px currentColor; border-image: none;
+}
+#content .wppa-comment-form table {
+	border: 0px currentColor; border-image: none; width: 100%; text-align: left;
+}
+.wppa-comment-form table {
+	border: 0px currentColor; border-image: none; width: 100%; text-align: left;
+}
+#content .wppa-detail table {
+	border: 0px currentColor; border-image: none; width: 100%; text-align: left;
+}
+.wppa-detail table {
+	border: 0px currentColor; border-image: none; width: 100%; text-align: left;
+}
+.wppa-custom {
+	
+}
+.wppa-user-file {
+	float: left;
+}
+.wppa-user-textarea {
+	
+}
+.wppa-user-submit {
+	padding: 0px; height: 23px; float: right;
+}
+.wppa-slideshow-browse-link {
+	
+}
+.wppa-numberbar {
+	z-index: 85;
+}
+.wppa-numberbar a {
+	text-decoration: none; cursor: pointer;
+}
+.wppa-numberbar a.wppa-numbar-current {
+	
+}
+.wppa-thumbnew {
+	
+}
+.wppa-albumnew {
+	
+}
+.wppa-iptc-label {
+	
+}
+.wppa-iptc-value {
+	padding-left: 12px !important;
+}
+.wppa-exif-label {
+	
+}
+.wppa-exif-value {
+	padding-left: 12px !important;
+}
+#wppa-overlay-txt table {
+	text-align: left;
+}
+.wppa-label {
+	
+}
+.wppa-value {
+	
+}
+.wppa-mphoto {
+	
+}
+.wppa-sphoto {
+	
+}
+.wppa-tagcloud {
+	padding-top: 6px;
+}
+.wppa-multitag {
+	padding-top: 6px;
+}
+.wppa-cartform {
+	margin: 0px;
+}
+#phpinfo {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+#phpinfo {
+	font-family: sans-serif;
+}
+#phpinfo td {
+	font-family: sans-serif;
+}
+#phpinfo th {
+	font-family: sans-serif;
+}
+#phpinfo h1 {
+	font-family: sans-serif;
+}
+#phpinfo h2 {
+	font-family: sans-serif;
+}
+#phpinfo pre {
+	margin: 0px; font-family: monospace;
+}
+#phpinfo a:link {
+	color: rgb(0, 0, 153); text-decoration: none; background-color: rgb(255, 255, 255);
+}
+#phpinfo a:hover {
+	text-decoration: underline;
+}
+#phpinfo table {
+	border-collapse: collapse;
+}
+#phpinfo .center {
+	text-align: center;
+}
+#phpinfo .center table {
+	width: 600px; text-align: left; margin-right: auto; margin-left: auto;
+}
+#phpinfo .center th {
+	text-align: center !important;
+}
+#phpinfo td {
+	border: 1px solid rgb(0, 0, 0); border-image: none; font-size: 75%; vertical-align: baseline;
+}
+#phpinfo th {
+	border: 1px solid rgb(0, 0, 0); border-image: none; font-size: 75%; vertical-align: baseline;
+}
+#phpinfo h1 {
+	font-size: 150%;
+}
+#phpinfo h2 {
+	font-size: 125%;
+}
+#phpinfo .p {
+	text-align: left;
+}
+#phpinfo .e {
+	color: rgb(0, 0, 0); font-weight: bold; background-color: rgb(204, 204, 255);
+}
+#phpinfo .h {
+	color: rgb(0, 0, 0); font-weight: bold; background-color: rgb(153, 153, 204);
+}
+#phpinfo .v {
+	color: rgb(0, 0, 0); background-color: rgb(204, 204, 204);
+}
+#phpinfo .vr {
+	text-align: right; color: rgb(0, 0, 0); background-color: rgb(204, 204, 204);
+}
+#phpinfo img {
+	border: 0px currentColor; border-image: none; float: right;
+}
+#phpinfo hr {
+	border: 0px currentColor; border-image: none; width: 600px; height: 1px; color: rgb(0, 0, 0); background-color: rgb(204, 204, 204);
+}
