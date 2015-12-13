@@ -10,6 +10,8 @@ pos_tag with stanford tagger
 
 java -mx300m -cp stanford-postagger.jar edu.stanford.nlp.tagger.maxent.MaxentTagger -model models/chinese-distsim.tagger -textFile del.txt -outputFile out.txt
 
+http://www.elias.cn/Python/JPype
+
 
 #NLTK 用法
 
