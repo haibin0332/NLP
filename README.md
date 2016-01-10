@@ -2,9 +2,7 @@
 
 reading and practicing
 
-
 http://blog.csdn.net/yangliuy/article/details/8330640
-
 
 pos_tag with stanford tagger
 
@@ -75,3 +73,8 @@ http://blog.csdn.net/liushulinle/article/details/18817019
 #Tools
 
 http://m.blog.csdn.net/blog/huyoo/12188573
+
+
+#important python code
+
+re.sub("[\s+\.\!\/_,$%^*(+\"\']+|[+——！，。？、~@#￥%……&*（）=。]+|[“”]+".decode("utf8"), "".decode("utf8"), genrefield) 
