@@ -78,3 +78,5 @@ http://m.blog.csdn.net/blog/huyoo/12188573
 #important python code
 
 re.sub("[\s+\.\!\/_,$%^*(+\"\']+|[+——！，。？、~@#￥%……&*（）=。]+|[“”]+".decode("utf8"), "".decode("utf8"), genrefield) 
+
+sorted(word_dict.items(), key=lambda d: d[1]) 根据value值排序
