@@ -77,9 +77,11 @@ http://m.blog.csdn.net/blog/huyoo/12188573
 
 #important python code
 
-re.sub("[\s+\.\!\/_,$%^*(+\"\']+|[+——！，。？、~@#￥%……&*（）=。]+|[“”]+".decode("utf8"), "".decode("utf8"), genrefield) 
+1)re.sub("[\s+\.\!\/_,$%^*(+\"\']+|[+——！，。？、~@#￥%……&*（）=。]+|[“”]+".decode("utf8"), "".decode("utf8"), genrefield) 
 
-sorted(word_dict.items(), key=lambda d: d[1]) 根据value值排序
+2)sorted(word_dict.items(), key=lambda d: d[1]) 根据value值排序
 
-#!/usr/bin/env python
+3)#!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+4)if dict.get(keyset, 0)!=0: #hash method
