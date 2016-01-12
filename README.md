@@ -83,4 +83,4 @@ http://m.blog.csdn.net/blog/huyoo/12188573
 
 3)#!/usr/bin/env python # -*- coding: utf-8 -*-
 
-4)if dict.get(keyset, 0)!=0: #hash method
+4)if dict.get(keyset, 0)!=0: #hash method  get(keyset, default) 不存在则返回0，如果不为零，exist
