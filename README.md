@@ -81,7 +81,6 @@ http://m.blog.csdn.net/blog/huyoo/12188573
 
 2)sorted(word_dict.items(), key=lambda d: d[1]) 根据value值排序
 
-3)#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+3)#!/usr/bin/env python # -*- coding: utf-8 -*-
 
 4)if dict.get(keyset, 0)!=0: #hash method
