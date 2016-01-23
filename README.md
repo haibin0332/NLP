@@ -84,3 +84,48 @@ http://m.blog.csdn.net/blog/huyoo/12188573
 3)#!/usr/bin/env python # -*- coding: utf-8 -*-
 
 4)if dict.get(keyset, 0)!=0: #hash method  get(keyset, default) 不存在则返回0，如果不为零，exist
+
+
+#output word2vec
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*
+
+
+import gensim
+import codecs
+#import time
+
+if __name__=='__main__':
+    
+    print 'wait loading model...'    
+    
+    model_path = r'../data/worddata/vectors.bin'   
+    f = codecs.open(r'../data/worddata/simwords_result.txt', 'wb', 'utf-8')  
+    model = gensim.models.Word2Vec.load_word2vec_format(model_path, binary=True)  # C binary format
+    print 'waiting loading dictionary...'
+    
+    wordsdict = [unicode(line.strip(), 'utf8') for line in open(r'../data/worddata/fullworddict.txt')]
+    wordsdict=set(wordsdict)
+    
+    #time.sleep(100)
+    print 'finish loading'
+    
+    while True:
+        
+        input_options=raw_input('Enter a raw word: '.encode('utf-8'))
+      
+        if input_options.decode('utf8') in wordsdict:
+            # Open the key file and read the key
+            sim_words=model.most_similar(input_options.decode('utf8'), topn=200)
+            for sim_word in sim_words:
+                #print sim_word[0], sim_word[1]
+                f.write('%s %0.8f\n' %(sim_word[0], sim_word[1]))
+            sim_words=model.most_similar(input_options.decode('utf8'), topn=20)
+            for sim_word in sim_words:
+                print sim_word[0], sim_word[1]   
+            print 'Finish...'       
+        else:
+            print 'Input word not in dictionary, please reenter.'
+
+    
