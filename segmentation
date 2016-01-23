@@ -1,0 +1,98 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
+
+import jieba.posseg as pseg
+import re
+import csv
+import numpy as np 
+#import string
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+ 
+import codecs
+
+
+def check_contain_chinese(check_str):
+    if isinstance(check_str, unicode):
+        for ch in check_str:
+            if u'\u4e00' <= ch <= u'\u9fff':
+                return True
+        return False      
+    else:      
+        for ch in check_str.decode('utf-8'):
+            if u'\u4e00' <= ch <= u'\u9fff':
+                return True
+        return False
+
+   
+def writedictlist(input_file, ls): 
+    f = codecs.open(input_file, 'wb', 'utf-8') 
+    for d in ls:     
+        f.write('%s %d\n' %(d[0], d[1])) 
+    f.close() 
+ 
+def writeorderedlist(input_file, ls): 
+    f = open(input_file, 'w') 
+    for d in ls:     
+        f.write('%s %.5f\n' %(d[0], d[1]))  
+    f.close()          
+
+if __name__ == '__main__':
+    
+###����һ���������洢�ִʺʹ��� 
+    word_matrix = [] 
+    word_dict={} #定义一个字典
+    uid=0 
+    count_all=0
+##############################################    
+##��������
+    stopwords = [unicode(line, 'utf8') for line in open('stopword.txt')]
+    stopwords=set(stopwords)
+    
+    fdata = open(r'../data/reviewdata/desc', 'r')
+    g = fdata.readlines()
+      
+    for fields in g:  
+        if check_contain_chinese(fields)==1:
+            word_bag=[]         
+            chinese_seg_words = pseg.cut(fields) 
+            for chinese_seg_word in chinese_seg_words: 
+                if (re.match('^n|^t|^a|^b|^s|^v|^p|^d|^r|^z|^i', chinese_seg_word.flag)) and (chinese_seg_word.word not in stopwords):  
+                
+                    #print chinese_seg_word
+                    chinese_seg_word=chinese_seg_word.word.encode("utf-8")
+                    if word_dict.get(chinese_seg_word, 0)!=0:
+                        temp_uid= word_dict[chinese_seg_word]
+                        word_bag.append(temp_uid) 
+                                              
+                    else: 
+                        uid+=1     
+                        word_dict[chinese_seg_word]=uid                  
+                        word_bag.append(uid)                                          
+
+            if len(word_bag)>0:
+                word_bag=tuple(word_bag)
+                word_matrix.append(word_bag)
+            count_all+=1
+            if count_all % 1000 == 0:
+                print count_all    
+
+    with open(r'../data/reviewdata/word_matrix_comments.csv', 'wb') as csvfile:
+              
+        spamwriter = csv.writer(csvfile, dialect='excel')
+           
+        for i in np.arange(len(word_matrix)):
+       
+            spamwriter.writerow([item for item in word_matrix[i]])  
+                
+    print 'ok..'
+    ordered_word_dict = sorted(word_dict.items(), key=lambda d: d[1])
+    writedictlist(r'../data/reviewdata/worddict_comments.txt', ordered_word_dict)
+                  
+#     print 'ok....'              
+#     word_tf_idf=tf_idf(word_matrix)
+#     ordered_word_tf_idf = sorted(word_tf_idf.items(), key=lambda d: d[1], reverse=True)
+#     writeorderedlist(r'../data/reviewdata/orderword.txt', ordered_word_tf_idf)   
+     
+    print 'final'       
