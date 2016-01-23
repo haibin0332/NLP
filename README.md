@@ -88,13 +88,10 @@ http://m.blog.csdn.net/blog/huyoo/12188573
 
 #output word2vec
 
-#!/usr/bin/env python
-# -*- coding: utf-8 -*
-
 
 import gensim
 import codecs
-#import time
+
 
 if __name__=='__main__':
     
